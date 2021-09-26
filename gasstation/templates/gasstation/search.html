@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nearest Gas Station</title>
+</head>
+<body>
+    {% block content %}
+    <h1>These are the gas stations near you.</h1>
+    {% for places in query_list %}
+    <h3>Name: {{places.name}}</h3>
+    {% for my_key, my_values in places.geo_location.items %}
+    <h3>{{my_key}}: {{my_values}}</h3>
+
+    {% endfor %}
+        
+    <hr>
+    {% endfor %}
+    {% endblock %}
+
+{% block map %}
+    {{fig}}
+
+{% endblock %}
+</body>
+</html>

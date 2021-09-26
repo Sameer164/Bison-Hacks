@@ -1,0 +1,199 @@
+{% load static %}
+
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>SMOOTH SAFER</title>
+		<meta charset="utf-8" />
+        <script type='text/javascript' src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="{% static 'css/main.css' %%}" />
+		<noscript><link rel="stylesheet" href="{% static 'css/noscript.css' %}" /></noscript>
+	</head>
+    
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="logo">
+							<span class="icon fa  "><i class="fas fa-truck-pickup"></i></span>
+						</div>
+						<div class="content">
+							<div class="inner">
+								<h1>Smooth Safer</h1> <br>
+								<h3>Your One Stop Destination To Find Gas Stations Near You, and survive on the road.</h3>
+							</div>
+						</div>
+						<nav>
+							<ul>
+								<li><a href="#intro">About Us </a></li>
+								<li><a href="{% url 'search' %}">Locate</a></li>
+								<li><a href="#about">Hacks</a></li>
+								<li><a href="#contact">Contact Us</a></li>
+								<!--<li><a href="#elements">Elements</a></li>-->
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Intro -->
+							<article id="intro">
+								<h2 class="major">About Us</h2>
+								<span class="image main"><img src="{% static 'img/pic01.jpg' %}" alt="" /></span>
+								<p>Smooth Safer is a web app catering to the best possible way drivers experience the road. The web-app provides the locations of nearest <b><a href="#work">Gas Stations</a></b> to the user with just one click.</p>
+								<p>Along with this we have also included Smooth Safer Response team and hacks to help user to deal with emergency situations including changing of tires etc.</p>
+							</article>
+
+						<!-- Work -->
+							<article id="work">
+								<h2 class="major">Find A Gas Station Near Me</h2>
+								<span class="image main"><img src="{% static 'img/pic02.jpg' %}" alt="" /></span>
+								<p>Please enter your nearest location for the best outcome.</p>
+								<div id="locationField">
+									<input id="autocomplete" placeholder="Enter your city" type="text" />
+								</div>
+
+							</article>
+
+						<!-- About -->
+							<article id="about">
+								<h2 class="major">Driving Hacks</h2>
+								<iframe width="560" height="315" src="https://www.youtube.com/embed/zKgLX1xAeoo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								<!-- <span class="image main"><img src="images/pic03.jpg" alt="" /></span> -->
+								<p><a href="#advice"><h5>start now!</h5></a>
+
+								</p>
+							</article>
+
+						<!-- Advices -->
+							<article id="advice">
+								<h2 class="major">Advices today:</h2>
+								
+								<div class="advice-grid">
+									<p class="advice-title">
+										For Longer Driving
+									</p>
+									<a href="https://www.thedailymeal.com/travel/these-foods-can-help-you-stay-alert-long-long-drives"
+									  target="_blank"
+									  class="advice advice-tile"
+									><img class="advice-image" src="https://thumbor.thedailymeal.com/4yF04CrBwBii-N0YUXBbujSOGAM=//https://www.thedailymeal.com/sites/default/files/story/Main_9-watermelonflu-iStock_thinkstock.jpg" alt="project"/>
+									</a>
+
+									<p>These Foods Can Help You Stay Alert on Long, Long Drives
+										August 4, 2015
+										By
+										Nikkitha Bakshani
+										You know caffeinated drinks like coffee and tea will help, but here are some other options</p>
+								</div>
+
+								<div class="advice-grid">
+									<p class="advice-title">
+										For Your Family
+									</p>
+									<a href="https://www.tripsavvy.com/road-tripping-with-an-infant-4110669"
+									  target="_blank"
+									  class="advice advice-tile"
+									><img class="advice-image" src="https://images-ext-1.discordapp.net/external/WcHr7GLsxE-l2oc3fTYvmcedZ0Io6dwJdhkspmbPDSQ/https/www.tripsavvy.com/thmb/qiu88p-y73lIiOzETivEaPjb1nI%3D/2121x1414/filters%3Afill%28auto%2C1%29/GettyImages-112301263-5820eb693df78cc2e8e2b0ab-5a08af859e9427003726922d.jpg?width=830&height=554" alt="project"/>
+									</a>
+
+									<p>
+										10 Tips for Road Tripping With an Infant
+										By Robyn Correll
+										Updated on 09/17/20
+										Fact checked by Jillian Dara Road trips with an infant can be stressful, but they don’t have to be, and the truth is a car ride with a baby is often less stressful than getting on a plane.
+									</p>
+								</div>
+
+								<div class="advice-grid">
+									<p class="advice-title">
+										For Your Pain-free
+									</p>
+									<a href="https://gokhalemethod.com/blog/63012"
+									  target="_blank"
+									  class="advice advice-tile"
+									><img class="advice-image" src="https://images-ext-2.discordapp.net/external/xIjyVPK_kcRfniBAUwTpU46RELKzs5B8sWORtnKjHAA/http/gokhalemethod.com/sites/default/files/u105051/Image%25201.16%2520PM.png" alt="project"/>
+									</a>
+
+									<p>
+										
+How to Modify Your Car Seat For a Pain-Free Ride
+Facebook
+WhatsApp
+Email
+Share
+December, 2016
+
+Most of us spend a good deal of time in our cars, commuting, chauffeuring kids around, doing errands, or if we’re lucky, heading out to an adventure spot.
+									</p>
+								</div>
+
+							</article>
+
+							
+
+						<!-- Contact -->
+							<article id="contact">
+								<h2 class="major">CONTACT US</h2>
+								<form method="post" action="https://formsubmit.co/">
+									<div class="fields">
+										<div>
+											<input type="hidden" name="_subject" value="New Customer request received!">
+										</div>
+										<div class="field half">
+											<label for="name">Name</label>
+											<input type="text" name="name" id="name" required/>
+										</div>
+										<div class="field half">
+											<label for="email">Email</label>
+											<input type="text" name="email" id="email" required/>
+										</div>
+										<div class="field">
+											<label for="message">Message</label>
+											<textarea name="message" id="message" rows="4" required></textarea>
+										</div>
+										<div>
+											<input type="hidden" name="_next" value="http://127.0.0.1:5500/thankyou.html">
+										</div>
+									</div>
+									
+									<ul class="actions">
+										<li><input type="submit" value="Send Message" class="primary" /></li>
+										<li><input type="reset" value="Reset" /></li>
+									</ul>
+								</form>
+								<ul><a>Follow us on different social media platform</a></ul>
+								<ul class="icons">
+									<li><a href="https://twitter.com/" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="https://www.facebook.com/" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+									<li><a href="https://www.instagram.com/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</article>
+
+						
+					</div>
+
+				<!-- Footer -->
+					{% comment %} <footer id="footer">
+						<p class="copyright"></p>
+					</footer> {% endcomment %}
+
+			</div>
+
+		<!-- BG -->
+			<div id="bg"></div>
+
+		<!-- Scripts -->
+			<script src="{% static 'js/jquery.min.js' %}"></script>
+			<script src="{% static 'js/brwoser.min.js' %}"></script>
+			<script src="{% static 'js/breakpoints.min.js' %}"></script>
+			<script src="{% static 'js/util.js' %}"></script>
+			<script src="{% static 'js/main.js' %}"></script>
+        
+	</body>
+
+</html>
