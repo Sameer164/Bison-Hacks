@@ -1,0 +1,71 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Autism</title>
+     <link href="{% static 'css/next_project.css' %}" rel="stylesheet" type="text/css" />
+     <script src="function.js"></script>
+  </head>
+  <body class="light" id="themed">
+  <div id="grad1">
+  <header>
+          <img
+        src="https://cdn.glitch.me/e4359ceb-1a1a-4f30-bbc8-5bd01fc4e489%2FLogoMakr-43qneN.png?v=1635587066566"
+        alt="Autism logo"
+      />
+    <nav>      
+    <ul>
+          <li><a class="active" href="{% url 'home' %}">Home</a></li>
+         <li><a href="{% url 'search' %}">Schools</a></li>
+          <li><a href="{% url 'blog' %}">Blog</a></li>
+          <li><a target="_blank" href="https://docs.google.com/presentation/d/e/2PACX-1vRF10l10pybT0PGrcJdf_4fyiO9F46G75oAWI1KuDe1K82R24SmZnm8CLx_VLPnTmLaSV81YFneGZTP/pub?start=false&loop=false&delayms=60000&slide=id.gf6eb62a30b_0_52">Educational Game</a></li>
+       <li><a href="{% url 'contact' %}">Contact Us</a></li>  
+      </ul>
+      </nav>
+  </header>
+  <body>
+    <center><h1>
+        AUTISM WARRIORS ACROSS THE GLOBE
+          </h1></center>
+    <p>
+    <center>
+      A safe space for you to connect with people on a similar journey just like your's with Autism. You're mot alone. </center></p>
+      <div class="gallery" > 
+      <a
+        target="_blank"
+        href="https://autismjourney.org/autism-is-my-sons-superpower/"
+      >
+        <img
+          src="https://cdn.glitch.me/e4359ceb-1a1a-4f30-bbc8-5bd01fc4e489%2FKenden-400x445.jpg?v=1635552375282" style="width:75%"
+          alt="My son's superpower-Autism Journey "
+        />
+      </a>
+      <div class="desc">The article "Autism is my son's superpower"!</div>
+    </div>
+
+    <div class="gallery">
+      <a
+        target="_blank"
+        href="https://autismjourney.org/autism-doesnt-define-us/"
+      >
+        <img
+          src="https://cdn.glitch.me/e4359ceb-1a1a-4f30-bbc8-5bd01fc4e489%2F1-600x600.jpg?v=1635552569729" style="width:75%"
+          alt="Autism dosent define us-Autism Journey"
+        />
+      </a>
+      <div class="desc">Autism doesn't define us-Autism Journey</div>
+    </div>
+        <div class="gallery">
+      <a
+        target="_blank"
+        href="https://autismjourney.org/tips-to-keep-your-family-healthy-and-active/"
+      >
+        <img
+          src="https://cdn.glitch.me/e4359ceb-1a1a-4f30-bbc8-5bd01fc4e489%2FFamily-yoga-1.png?v=1635552561743" style="width:75%"
+          alt="Tips to keep your family healthy-Autism Journey"
+        />
+      </a>
+      <div class="desc">Autism doesn't define us-Autism Journey</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,272 @@
+.active {
+    background-color: #4CAF50;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: HIDDEN;
+    background-color: #d4d0ff;
+    position: -webkit-sticky; 
+    position: sticky;
+    top: 0;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 18px 17px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #6196da;
+  }
+  
+  
+  body {
+    color: black;
+    text-align: center;
+    background-size: contain;
+    background-color: #0e009f;
+  }
+  
+  img {
+    width: 10%;
+    align:center
+  }
+  
+  h1 {
+    color: 	black;
+    font-size: 40px;
+    text-shadow: 2px 2px 6px white;
+  }
+  
+  #grad1 {
+    background-image: linear-gradient(to right, 	#6196da, darkblue);
+    background-color: blue;
+    height: 800px;
+    box-shadow: 10px 10px 5px black;
+  }
+  
+  a:link,
+  a:visited {
+    background-color: white;
+    color: black;
+    border: 2px solid blue;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  a:hover,
+  a:active {
+    background-color: blue;
+    color: white;
+  }
+  
+  h1 {
+    color: white;
+    font-size: 40px;
+    text-shadow: 2px 2px 6px grey;
+  }
+  
+  p {
+    font-size: 28px;
+    text-align: center;
+    background-size: contain;
+    color: white;
+  }
+  
+  #Blogs {
+    height: 100px;
+    padding: 40px 120px;
+    background-position: center;
+    background-image: linear-gradient(to right, 	#6196da, darkblue);
+    background-color: blue;
+    height: 620px;
+    box-shadow: 10px 10px 5px black;
+    }
+  p{
+    color:white;
+  }
+  
+  div.gallery {
+    margin: 10px;
+    border: 2px solid #ccc;
+    float: left;
+    width: 400px;
+    
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: 300px;
+  }
+  
+  div.gallery{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+    font-family:"Times New Roman";
+    font-weight: bold;
+    color: white;
+    
+  }
+  
+  
+  
+  html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  .column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+  
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    h1:white;
+  }
+  
+  .container {
+    padding: 0 16px;
+  }
+  
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .title {
+    color: grey;
+    text-shadow: 2px 2px 6px black;
+  }
+  
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .button:hover {
+    background-color: #555;
+  }
+  
+  #Us{
+    p:white;
+  }
+  
+  .dark a {
+    color: orange;
+  }
+  
+  .light {
+    background-color: #0e009f;
+    color: black;
+  }
+  .dark {
+    background-color: #0e009f;
+    color: #0e009f;
+  }
+  
+  label{
+    color:white
+  }
+  
+  h2{
+      color: white;
+    font-size: 40px;
+    text-shadow: 2px 2px 6px grey;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* Add padding to containers */
+  .container {
+    padding: 16px;
+    background-color: white;
+  }
+  
+  /* Full-width input fields */
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  /* Overwrite default styles of hr */
+  hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+  }
+  
+  /* Set a style for the submit button */
+  .registerbtn {
+    background-color: #6196da;
+    color: black;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+  
+  h3{
+        color: black;
+    font-size: 40px;
+    text-shadow: 2px 2px 6px grey;
+  }
+  
+  
+  
+  

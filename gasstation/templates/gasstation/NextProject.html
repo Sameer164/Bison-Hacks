@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Document</title>
+
+    <style>
+        #map{
+            height: 600px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    {% comment %} API KEY =  AIzaSyADja9VSAdmvGSz_eH98YbmfkwJAPYq33M {% endcomment %}
+
+    <div class = 'container'>
+        <h2 id = "text-center">What is your current location?</h2>
+        <form id = 'location-form'> 
+            <input type = "text" id = 'location-input' class = "form-control form-control-lg">
+            <br>
+            <button type = "submit" class = "btn btn-primary btn-block">Submit</button>
+            <br>
+            <br>
+        </form>
+        <div id = "Address"></div>
+
+
+
+        <div id = "map"></div>
+    <div>
+    
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyADja9VSAdmvGSz_eH98YbmfkwJAPYq33M&libraries=&v=weekly"></script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyADja9VSAdmvGSz_eH98YbmfkwJAPYq33M&libraries=places"></script>
+
+
+    <script>
+        geocode();
+
+        var form = document.getElementById('location-form');
+
+        form.addEventListener('submit', geocode); 
+
+
+
+        var location2 = null;
+        var latitude = null;
+        var longitude = null;
+        var maps;
+
+
+
+        function lists(lat, lng){
+
+            var main_point = new google.maps.LatLng(lat, lng);
+            var options = {
+                zoom: 14,
+                center: main_point
+            };
+
+            maps = new google.maps.Map(document.getElementById('map'), options);
+
+            
+            var search_options = {
+                location: main_point,
+                radius: 2000,
+                keyword: 'autism'
+            };
+
+            var main_map = new google.maps.places.PlacesService(maps);
+            infowindow = new google.maps.InfoWindow();
+
+            main_map.nearbySearch(search_options, function(results){
+                for (var i = 0; i < results.length; i++) {
+                    createMarker(results[i]);
+                }
+
+
+
+            });
+        }
+
+
+
+        function createMarker(place) {
+            var placeLoc = place.geometry.location;
+            var marker = new google.maps.Marker({
+            map: maps,
+            position: place.geometry.location
+            });
+
+            google.maps.event.addListener(marker, 'click', function() {
+            infowindow.setContent(place.name);
+            infowindow.open(map, this);
+        });
+}
+
+
+
+
+        function geocode(e){
+
+            e.preventDefault();
+            var location = document.getElementById('location-input').value;
+            
+            axios.get('https://maps.googleapis.com/maps/api/geocode/json', {
+                params: {
+                    address: location,
+                    key: "AIzaSyADja9VSAdmvGSz_eH98YbmfkwJAPYq33M"
+                }
+            })
+            .then(function(response){
+                // We will use these responses. 
+                console.log(response)
+                //Formatted address
+                location2 = response.data.results[0].formatted_address
+                latitude = response.data.results[0].geometry.location.lat
+                longitude = response.data.results[0].geometry.location.lng
+                var locationoutput = `
+                    <ul class = 'list-group'>
+                        <li class = "list-group-item">${location2}</li>
+                        <li class = "list-group-item">Latitude: ${latitude}</li>
+                        <li class = "list-group-item">Longitude: ${longitude}</li>
+                    </ul>
+                `
+                // Output
+                document.getElementById('Address').innerHTML = locationoutput;
+
+                //Address Components
+                lists(latitude, longitude);
+
+            })
+            .catch(function(error){
+                console.log(error)
+            })
+        }
+
+
+    </script>
+
+
+</body>
+</html>

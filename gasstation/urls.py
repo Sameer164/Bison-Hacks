@@ -1,7 +1,9 @@
 from django.urls import path
 from . import views
-
+# Our views.index currently returns the javascript logic. 
 urlpatterns = [
-    path("", views.index, name='home'),
-    path('search/', views.search, name = 'search'),
+    path("", views.home, name='home'),    
+    path('search/', views.index, name = 'search'),
+    path('blog/', views.blog, name = "blog"),
+    path('contact/', views.contact, name='contact')
 ]

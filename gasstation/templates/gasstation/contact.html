@@ -1,0 +1,99 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Autism</title>
+     <link href="{% static 'css/next_project.css' %}" rel="stylesheet" type="text/css" />
+     <script src="function.js"></script>
+  </head>
+  <body class="light" id="themed">
+  <header>
+          <img
+        src="https://cdn.glitch.me/e4359ceb-1a1a-4f30-bbc8-5bd01fc4e489%2FLogoMakr-43qneN.png?v=1635587066566"
+        alt="Autism logo"
+      />
+    <nav>      
+    <ul>
+      <li><a class="active" href="{% url 'home' %}">Home</a></li>
+         <li><a href="{% url 'search' %}">Schools</a></li>
+          <li><a href="{% url 'blog' %}">Blog</a></li>
+          <li><a target="_blank" href="https://docs.google.com/presentation/d/e/2PACX-1vRF10l10pybT0PGrcJdf_4fyiO9F46G75oAWI1KuDe1K82R24SmZnm8CLx_VLPnTmLaSV81YFneGZTP/pub?start=false&loop=false&delayms=60000&slide=id.gf6eb62a30b_0_52">Educational Game</a></li>
+       <li><a href="{% url 'contact' %}">Contact Us</a></li>  
+      </ul>
+      </nav>
+  </header>
+    <body>
+        <div id="grad1">
+
+          <form action="https://formsubmit.co/aarna200001@gmail.com" method="POST">
+  <div class="container">
+    <h1>Send us a Message!</h1>
+    <h6>Please fill in this form if you have any suggestions!</h6>
+    <hr>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" id="email" required>
+
+    <label for="psw"><b>Name</b></label>
+    <input type="password" placeholder="Enter Name" name="psw" id="psw" required>
+
+    <label for="psw-repeat"><b>Subject</b></label>
+    <input type="password" placeholder="Enter Subject" name="psw-repeat" id="psw-repeat" required>
+    
+        <label for="psw-repeat"><b>Sugesstion</b></label>
+    <input type="password" placeholder="Enter Sugession" name="psw-repeat" id="psw-repeat" required>
+    </hr>
+
+
+    <button type="submit" class="registerbtn">Submit</button>
+  </div>
+  
+</form>
+       
+      <h1>About Us!</h1>
+<br>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="https://cdn.glitch.me/e4359ceb-1a1a-4f30-bbc8-5bd01fc4e489%2FHi.png?v=1635586464675" alt="Aarna" style="width:75%">
+      <div class="container">
+        <h2>Aarna Patel</h2>
+        <p class="title">Student</p>
+        <p>Hi!</p>
+        <p>aarna200001@gmail.com</p>
+        <p><button class="button"><a href="https://mail.google.com/mail/u/0/?tab=om">Contact</a></button></p>
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="https://cdn.glitch.me/e4359ceb-1a1a-4f30-bbc8-5bd01fc4e489%2Fbitmoji%201.jpg?v=1635580243385" alt="Abhishree" style="width:75%">
+      <div class="container">
+        <h2>Abhishree Verma</h2>
+        <p class="title">Student </p>
+        <p>Hope You Liked Our Project</p>
+        <p>abhishreeverma07@gmail.com</p>
+        <p><button class="button"><a href="https://mail.google.com/mail/u/0/?tab=om">Contact</a></button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="https://cdn.glitch.me/e4359ceb-1a1a-4f30-bbc8-5bd01fc4e489%2Fbitmoji2.jpg?v=1635580581533" alt="" style="width:75%">
+      <div class="container">
+        <h2>Sameer Acharya</h2>
+        <p class="title">Student</p>
+        <p>Hey! Welcome To Our Page</p>
+        <p>sameerach123@gmail.com</p>
+        <p><button class="button"><a href="https://mail.google.com/mail/u/0/?tab=om">Contact</a></button></p>
+      </div>
+    </div>
+  </div>
+</div>
+      </div>
+    </body>
+  <body>

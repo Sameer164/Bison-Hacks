@@ -11,11 +11,17 @@ import gmaps
 
 def index(request, *args, **kwargs):
     context = {}
-    return render(request, 'gasstation/index.html', context)
+    return render(request, 'gasstation/NextProject.html', context)
 
 
+def blog(request):
+    return render(request, 'gasstation/blog.html')
 
+def home(request):
+    return render(request, 'gasstation/home.html')
 
+def contact(request):
+    return render(request, 'gasstation/contact.html')
 
 
 API_KEY = 'AIzaSyADja9VSAdmvGSz_eH98YbmfkwJAPYq33M'
