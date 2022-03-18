@@ -34,13 +34,13 @@
     <div>
     
 
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyADja9VSAdmvGSz_eH98YbmfkwJAPYq33M&libraries=&v=weekly"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyALMKvmsMbF6vUinkii2H6aWzP09kWHZcE&libraries=&v=weekly"></script>
 
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyADja9VSAdmvGSz_eH98YbmfkwJAPYq33M&libraries=places"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyALMKvmsMbF6vUinkii2H6aWzP09kWHZcE&libraries=places"></script>
 
 
     <script>
-        geocode();
+        {% comment %} geocode(); {% endcomment %}
 
         var form = document.getElementById('location-form');
 
@@ -111,7 +111,7 @@
             axios.get('https://maps.googleapis.com/maps/api/geocode/json', {
                 params: {
                     address: location,
-                    key: "AIzaSyADja9VSAdmvGSz_eH98YbmfkwJAPYq33M"
+                    key: "AIzaSyALMKvmsMbF6vUinkii2H6aWzP09kWHZcE"
                 }
             })
             .then(function(response){
