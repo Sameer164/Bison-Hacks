@@ -1,143 +1,588 @@
 {% load static %}
 
-<!DOCTYPE HTML>
+
 <html>
-	<head>
-		<title>SMOOTH SAFER</title>
-		<meta charset="utf-8" />
-        <script type='text/javascript' src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="{% static 'css/main.css' %%}" />
-		<noscript><link rel="stylesheet" href="{% static 'css/noscript.css' %}" /></noscript>
-	</head>
+<head>
+    <meta name = "viewport", content="width=device-width", initial-scale =1.0>
+    <title>Revision Page </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <section class="heading">
+        <header id="navbar">
+            <div class="menu-bar">
+                <a href="/index.htm" class="logo">Elite<span>Prep</span></a>
+                <ul>
+                    <li><a href="/index.htm">Home</a></li>
+                    <li> | </li>
+                    <li><a href="#">Games <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+            
+                        <div class="dropdown-menu">
+                            <ul>
+                                <li class="select-heading">Select Courses</li>
+                              <li><a href="#">Grade <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+
+                                <div class="dropdown-menu-1">
+                                    <ul>
+                                      <li><a href="#">One to Five</i></a></li>
+                                      <li><a href="#">Five to Ten</a></li>
+                                      <li><a href="#">Eleven</i></a></li> 
+                                      <li><a href="#">Twelve</a></li>
+                                    </ul>
+                                </div>
+
+                            </li>
+                              <li><a href="#">Science</a></li>
+                              <li>
+                                <a href="#">Mathematics</i></a>
+                              </li>
+                              <li><a href="#">English</a></li>
+                              <li><a href="#">Arts</a></li>
+                            </ul>
+                          </div>
+                    </li>
+                    <li> | </li>
+                    <li><a href="#about_us_page">About</a></li>
+                    <li> | </li>
+                    <li><a href="discussionboards.html">Discussion Boards</a></li>
+                    <li> | </li>
+                    <li><a href="/contact.html">Contact Us</a></li>
+
+
+                  </ul>      
+            </div>
+            <a data-contrast-button="true" class="btn1" href="/signuph.html" id="show-signup">Signup</a>               
+            <a data-contrast-button="true" class="btn2" href="/login.html" id="show-login">Login</a>
+
+        </header>
+
+    <div class="text">
+        <h1>Explore our kids' abilities</h1>
+        <h3>We help parents whose kids have autism to communicate with each others<br> and autism case centres in the town</h3>
+
+        <div class="search">
+              
+            <form action="#">
+                <input type="text1"
+                    placeholder="  What subject do you need help with? (eg. 'Biology')"
+                    name="search">
+                <button>
+                    <i class="fa fa-search"></i> 
+                    <!---- Javascript code to process seach bar ----->
+                </button>
+            </form>
+        </div>
+    </div>
+    </nav>
+    </section>
+
+        <!-------- REASONS ------>
+
+    <section class="reason">
+        <h2 class="head-ing">Why use ElitePrep</h2>
+        <div class="row">
+            <div class="reason-row">
+                <i class="fa fa-rocket" style="font-size: 40px"></i>
+                <h3 class="heading-one">On-demand Tutoring </h3>
+                <div class="written">Connect with an online tutor in less than 30<br>
+                    seconds, 24/7. It doesn’t matter if you want help with<br>
+                    a single problem or you need a 3-hour lesson.</div>
+            </div>
+
+            <div class="reason-row">
+                <i class="fa fa-trophy" style="font-size:40px"></i>
+                <h3 class="heading-one">All the tools you need</h3>
+                <div class="written"> Connect with an online tutor in less than 30<br>
+                    seconds, 24/7. It doesn’t matter if you want help with<br>
+                    a single problem or you need a 3-hour lesson.</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="reason-row">
+                <i class="fa fa-laptop" style="font-size: 40px"></i>
+                <h3 class="heading-one">On-demand Tutoring </h3>
+                <div class="written">Connect with an online tutor in less than 30<br>
+                    seconds, 24/7. It doesn’t matter if you want help with<br>
+                    a single problem or you need a 3-hour lesson.</div>
+            </div>
+
+            <div class="reason-row">
+                <i class="fa fa-podcast" style="font-size:40px"></i>
+                <h3 class="heading-one">All the tools you need</h3>
+                <div class="written"> Connect with an online tutor in less than 30<br>
+                    seconds, 24/7. It doesn’t matter if you want help with<br>
+                    a single problem or you need a 3-hour lesson.</div>
+            </div>
+        </div>     
+    </section>
+
+    <div id="about_us_page">
+        <div class="about_us">
+            <div class="our_story">
+                <h class="aqw2edd4">Who we are?</h>
+                <span></span>
+                <p class="des_crip">Having had trodden through the muddy<br>
+                    waters of the complex admission system<br>
+                    with no help from our alma mater, we<br>
+                    were lost, tired, and frustrated. From that<br>
+                    moment on, we decided that no one else<br>
+                    has to have this experience.</p>
+            </div>
+            <div class="our_story">
+                <h class="aqw2edd4">Our Vision</h>
+                <p class="des_crip">Having had trodden through the muddy<br>
+                    waters of the complex admission system<br>
+                    with no help from our alma mater, we<br>
+                    were lost, tired, and frustrated. From that<br>
+                    moment on, we decided that no one else<br>
+                    has to have this experience.</p>
+            </div>
+            <div class="our_story">
+                <h class="aqw2edd4">Our Values</h>
+                <p class="des_crip">Having had trodden through the muddy<br>
+                    waters of the complex admission system<br>
+                    with no help from our alma mater, we<br>
+                    were lost, tired, and frustrated. From that<br>
+                    moment on, we decided that no one else<br>
+                    has to have this experience.</p>
+            </div>
+        </div>
+    </div>
+
+    <!--Sample Lesson Idea Page-->
     
-	<body class="is-preload">
-		<!-- Wrapper -->
-			<div id="wrapper">
+    <div class="lesson_plan" data-contrast-nobg="true">
+        <div class="class">
+            <div>
+                <h2 class="run_ning">Blandit volutpat maecenas</h2>
+                <div class="description">Lorem ipsum dolor sit amet,<br>ut enim ad minim veniam, 
+                    ullamco laborisconsectetur<br>adipiscing elit, sed do eiusmod tempor<br>incididunt 
+                    ut labore et dolore.</div>
+                    <a data-contrast-button="true" class="saved_videos" href="https://www.youtube.com/c/MathematicsInitiativesinNepalMIN">Demo Lesson Videos</a>
+            </div>
+            <div class="image_kit"></div>
+        </div>
+        
+    </div>
 
-				<!-- Header -->
-					<header id="header">
-						<div class="logo">
-							<span class="icon fa  "><i class="fas fa-truck-pickup"></i></span>
-						</div>
-						<div class="content">
-							<div class="inner">
-								<h1>Smooth Safer</h1> <br>
-								<h3>Your One Stop Destination To Find Gas Stations Near You, and survive on the road.</h3>
-							</div>
-						</div>
-						<nav>
-							<ul>
-								<li><a href="#intro">About Us </a></li>
-								<li><a href="{% url 'search' %}">Locate</a></li>
-								<li><a href="#about">Hacks</a></li>
-								<li><a href="#contact">Contact Us</a></li>
-								<!--<li><a href="#elements">Elements</a></li>-->
-							</ul>
-						</nav>
-					</header>
+        <!---------------------------------ENROLLMENT PROCESS---------------------------->
 
-				<!-- Main -->
-					<div id="main">
+    <div class="get_enrolled">
+        <div class="insider_enroll">
+            <h2 class="header_inside">Let's join our ElitePrep</h2>
+            <div class="description_inside">Volutpat diam ut venenatis tellus in </div>
+    </div>
 
-						<!-- Intro -->
-							<article id="intro">
-								<h2 class="major">About Us</h2>
-								<span class="image main"><img src="{% static 'img/pic01.jpg' %}" alt="" /></span>
-								<p>Smooth Safer is a web app catering to the best possible way drivers experience the road. The web-app provides the locations of nearest <b><a href="#work">Gas Stations</a></b> to the user with just one click.</p>
-								<p>Along with this we have also included Smooth Safer Response team and hacks to help user to deal with emergency situations including changing of tires etc.</p>
-							</article>
+    <!---------------------------------Student Testimonials---------------------------->
 
-						<!-- Work -->
-							<article id="work">
-								<h2 class="major">Find A Gas Station Near Me</h2>
-								<span class="image main"><img src="{% static 'img/pic02.jpg' %}" alt="" /></span>
-								<p>Please enter your nearest location for the best outcome.</p>
-								<div id="locationField">
-									<input id="autocomplete" placeholder="Enter your city" type="text" />
-								</div>
+    <section class="heading_name">
+        <h2 class="teach_name">What our students say about ElitePrep</h2>
+            <div class="test_main_cont">
+                <div class="box_prev">
+                    <div class="asd2kjb">
+                        <div class="poi1uisg2">
+                            <div class="paweisj2">
+                                <img src="pictures/vector1.jpg">
+                            </div>
+                            <div class="user_info">
+                                <h2> Nikhil Aryal</h2>
+                                <span>lorannai2@gmail.com</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="add_review">
+                        <p>Lorem ipsum dolor sit amet,ut enim ad minim veniam 
+                            ullamco laborisconse cteturadipiscing elit, sed do.</p>
+                    </div>
+                </div>
 
-							</article>
+                <div class="box_pr">
+                    <div class="asd2kjb">
+                        <div class="poi1uisg2">
+                            <div class="paweisj2">
+                                <img src="pictures/vector2.jpg">
+                            </div>
+                            <div class="user_info">
+                                <h2> Nikhil Aryal</h2>
+                                <span>lorannai2@gmail.com</span>
+                                <div class="stars_review">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="add_review">
+                        <p>Lorem ipsum dolor sit amet,ut enim ad minim veniam 
+                            ullamco laborisconse cteturadipiscing elit, sed do.</p>
+                    </div>
+                </div>
 
-						<!-- About -->
-							<article id="about">
-								<h2 class="major">Driving Hacks</h2>
-								<iframe width="560" height="315" src="https://www.youtube.com/embed/zKgLX1xAeoo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-								<!-- <span class="image main"><img src="images/pic03.jpg" alt="" /></span> -->
-								<p><a href="#advice"><h5>start now!</h5></a>
+                <div class="box_pr">
+                    <div class="asd2kjb">
+                        <div class="poi1uisg2">
+                            <div class="paweisj2">
+                                <img src="pictures/vector3.jpg">
+                            </div>
+                            <div class="user_info">
+                                <h2> Nikhil Aryal</h2>
+                                <span>lorannai2@gmail.com</span>
+                                <div class="stars_review">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="add_review">
+                        <p>Lorem ipsum dolor sit amet,ut enim ad minim veniam 
+                            ullamco laborisconse cteturadipiscing elit, sed do.</p>
+                    </div>
+                </div>
 
-								</p>
-							</article>
+                <div class="box_prev">
+                    <div class="asd2kjb">
+                        <div class="poi1uisg2">
+                            <div class="paweisj2">
+                                <img src="pictures/vector8.jpg">
+                            </div>
+                            <div class="user_info">
+                                <h2> Nikhil Aryal</h2>
+                                <span>lorannai2@gmail.com</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="add_review">
+                        <p>Lorem ipsum dolor sit amet,ut enim ad minim veniam 
+                            ullamco laborisconse cteturadipiscing elit, sed do.</p>
+                    </div>
+                </div>
+            </div>
+    </section>
 
-						<!-- Advices -->
-							<article id="advice">
-								<h2 class="major">Advices today:</h2>
-								
-								<div class="advice-grid">
-									<p class="advice-title">
-										For Longer Driving
-									</p>
-									<a href="https://www.thedailymeal.com/travel/these-foods-can-help-you-stay-alert-long-long-drives"
-									  target="_blank"
-									  class="advice advice-tile"
-									><img class="advice-image" src="https://thumbor.thedailymeal.com/4yF04CrBwBii-N0YUXBbujSOGAM=//https://www.thedailymeal.com/sites/default/files/story/Main_9-watermelonflu-iStock_thinkstock.jpg" alt="project"/>
-									</a>
+    <!----------------------------TEACHERS TESTIMONIALS------------------------------->
 
-									<p>These Foods Can Help You Stay Alert on Long, Long Drives
-										August 4, 2015
-										By
-										Nikkitha Bakshani
-										You know caffeinated drinks like coffee and tea will help, but here are some other options</p>
-								</div>
+    <section class="heading_name">
+        <h2 class="teacher_name">What our teachers say about ElitePrep</h2>
+            <div class="test_main_cont">
+                <div class="box_pr">
+                    <div class="asd2kjb">
+                        <div class="poi1uisg2">
+                            <div class="paweisj2">
+                                <img src="pictures/vector1.jpg">
+                            </div>
+                            <div class="user_info">
+                                <h2> Nikhil Aryal</h2>
+                                <span>lorannai2@gmail.com</span>
+                                <div class="stars_review">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="add_review">
+                        <p>Lorem ipsum dolor sit amet,ut enim ad minim veniam 
+                            ullamco laborisconse cteturadipiscing elit, sed do.</p>
+                    </div>
+                </div>
 
-								<div class="advice-grid">
-									<p class="advice-title">
-										For Your Family
-									</p>
-									<a href="https://www.tripsavvy.com/road-tripping-with-an-infant-4110669"
-									  target="_blank"
-									  class="advice advice-tile"
-									><img class="advice-image" src="https://images-ext-1.discordapp.net/external/WcHr7GLsxE-l2oc3fTYvmcedZ0Io6dwJdhkspmbPDSQ/https/www.tripsavvy.com/thmb/qiu88p-y73lIiOzETivEaPjb1nI%3D/2121x1414/filters%3Afill%28auto%2C1%29/GettyImages-112301263-5820eb693df78cc2e8e2b0ab-5a08af859e9427003726922d.jpg?width=830&height=554" alt="project"/>
-									</a>
+                <div class="box_prev">
+                    <div class="asd2kjb">
+                        <div class="poi1uisg2">
+                            <div class="paweisj2">
+                                <img src="pictures/vector3.jpg">
+                            </div>
+                            <div class="user_info">
+                                <h2> Nikhil Aryal</h2>
+                                <span>lorannai2@gmail.com</span>
+                                <div class="stars_review">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="add_review">
+                        <p>Lorem ipsum dolor sit amet,ut enim ad minim veniam 
+                            ullamco laborisconse cteturadipiscing elit, sed do.</p>
+                    </div>
+                </div>
 
-									<p>
-										10 Tips for Road Tripping With an Infant
-										By Robyn Correll
-										Updated on 09/17/20
-										Fact checked by Jillian Dara Road trips with an infant can be stressful, but they don’t have to be, and the truth is a car ride with a baby is often less stressful than getting on a plane.
-									</p>
-								</div>
+                <div class="box_prev">
+                    <div class="asd2kjb">
+                        <div class="poi1uisg2">
+                            <div class="paweisj2">
+                                <img src="pictures/vector2.jpg">
+                            </div>
+                            <div class="user_info">
+                                <h2> Nikhil Aryal</h2>
+                                <span>lorannai2@gmail.com</span>
+                                <div class="stars_review">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="add_review">
+                        <p>Lorem ipsum dolor sit amet,ut enim ad minim veniam 
+                            ullamco laborisconse cteturadipiscing elit, sed do.</p>
+                    </div>
+                </div>
 
-								<div class="advice-grid">
-									<p class="advice-title">
-										For Your Pain-free
-									</p>
-									<a href="https://gokhalemethod.com/blog/63012"
-									  target="_blank"
-									  class="advice advice-tile"
-									><img class="advice-image" src="https://images-ext-2.discordapp.net/external/xIjyVPK_kcRfniBAUwTpU46RELKzs5B8sWORtnKjHAA/http/gokhalemethod.com/sites/default/files/u105051/Image%25201.16%2520PM.png" alt="project"/>
-									</a>
+                <div class="box_pr">
+                    <div class="asd2kjb">
+                        <div class="poi1uisg2">
+                            <div class="paweisj2">
+                                <img src="pictures/vector8.jpg">
+                            </div>
+                            <div class="user_info">
+                                <h2> Nikhil Aryal</h2>
+                                <span>lorannai2@gmail.com</span>
+                                <div class="stars_review">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="add_review">
+                        <p>Lorem ipsum dolor sit amet,ut enim ad minim veniam 
+                            ullamco laborisconse cteturadipiscing elit, sed do.</p>
+                    </div>
+                </div>
+            </div>
+    </section>
+   
+ <!---------------------- FOOTER------------------------->
 
-									<p>
-										
-How to Modify Your Car Seat For a Pain-Free Ride
-Facebook
-WhatsApp
-Email
-Share
-December, 2016
+    <section class="footer">
+        <div class="main_footer">
+            <div class="terms_condi">
+                <h1 class="name_prep">ElitePrep <i class="fa fa-ils" aria-hidden="true"></i></h1>
+                <div class="foot_work">Lorem ipsum dolor sit amet ut enim ad minim veniam, 
+                    ullamco laborisconsectetur<br>adipiscing elit, sed do eiusmod tempor<br>incididunt 
+                    ut labore et dolore.</div>
+                <ul class="icons">
+                    <li><a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></i></a></li>
+                    <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></i></a></li>
+                    <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></i></a></li>
+                </div>
+            </div>
+        </div>
+    </section>
 
-Most of us spend a good deal of time in our cars, commuting, chauffeuring kids around, doing errands, or if we’re lucky, heading out to an adventure spot.
-									</p>
-								</div>
+    <div class="footer_bottom">
+        <p class="more_desc">copyright &copy;2020 Howard University. designed by <span>Nikhil Aryal</span></p>
+    </div>
+</body>
+</html>
 
-							</article>
 
-							
 
-						<!-- Contact -->
-							<article id="contact">
+
+
+
+
+
+
+
+
+
+
+<!-- 
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SMOOTH SAFER</title>
+    <meta charset="utf-8" />
+    <script
+      type="text/javascript"
+      src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="{% static 'css/main.css' %%}" />
+    <noscript
+      ><link rel="stylesheet" href="{% static 'css/noscript.css' %}"
+    /></noscript>
+  </head> -->
+
+  <!-- <body class="is-preload"> -->
+    <!-- Wrapper -->
+    <!-- <div id="wrapper"> -->
+      <!-- Header -->
+      <!-- <header id="header">
+        <div class="logo">
+          <span class="icon fa"><i class="fas fa-truck-pickup"></i></span>
+        </div>
+        <div class="content">
+          <div class="inner">
+            <h1>Smooth Safer</h1>
+            <br />
+            <h3>
+              Your One Stop Destination To Find Gas Stations Near You, and
+              survive on the road.
+            </h3>
+          </div>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#intro">About Us </a></li>
+            <li><a href="{% url 'search' %}">Locate</a></li>
+            <li><a href="#about">Hacks</a></li>
+            <li><a href="#contact">Contact Us</a></li> -->
+            <!--<li><a href="#elements">Elements</a></li>-->
+          <!-- </ul>
+        </nav>
+      </header> -->
+
+      <!-- Main -->
+      <!-- <div id="main"> -->
+        <!-- Intro -->
+        <!-- <article id="intro">
+          <h2 class="major">About Us</h2>
+          <span class="image main"
+            ><img src="{% static 'img/pic01.jpg' %}" alt=""
+          /></span>
+          <p>
+            Smooth Safer is a web app catering to the best possible way drivers
+            experience the road. The web-app provides the locations of nearest
+            <b><a href="#work">Gas Stations</a></b> to the user with just one
+            click.
+          </p>
+          <p>
+            Along with this we have also included Smooth Safer Response team and
+            hacks to help user to deal with emergency situations including
+            changing of tires etc.
+          </p>
+        </article> -->
+
+        <!-- Work -->
+        <!-- <article id="work">
+          <h2 class="major">Find A Gas Station Near Me</h2>
+          <span class="image main"
+            ><img src="{% static 'img/pic02.jpg' %}" alt=""
+          /></span>
+          <p>Please enter your nearest location for the best outcome.</p>
+          <div id="locationField">
+            <input
+              id="autocomplete"
+              placeholder="Enter your city"
+              type="text"
+            />
+          </div>
+        </article> -->
+
+        <!-- About -->
+        <!-- <article id="about">
+          <h2 class="major">Driving Hacks</h2>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/zKgLX1xAeoo"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe> -->
+        <!-- <span class="image main"><img src="images/pic03.jpg" alt="" /></span> -->
+        <!-- <p>
+            <a href="#advice"><h5>start now!</h5></a>
+          </p>
+        </article> -->
+
+        <!-- Advices -->
+        <!-- <article id="advice">
+          <h2 class="major">Advices today:</h2>
+
+          <div class="advice-grid">
+            <p class="advice-title">For Longer Driving</p>
+            <a
+              href="https://www.thedailymeal.com/travel/these-foods-can-help-you-stay-alert-long-long-drives"
+              target="_blank"
+              class="advice advice-tile"
+              ><img
+                class="advice-image"
+                src="https://thumbor.thedailymeal.com/4yF04CrBwBii-N0YUXBbujSOGAM=//https://www.thedailymeal.com/sites/default/files/story/Main_9-watermelonflu-iStock_thinkstock.jpg"
+                alt="project"
+              />
+            </a>
+
+            <p>
+              These Foods Can Help You Stay Alert on Long, Long Drives August 4,
+              2015 By Nikkitha Bakshani You know caffeinated drinks like coffee
+              and tea will help, but here are some other options
+            </p>
+          </div>
+
+          <div class="advice-grid">
+            <p class="advice-title">For Your Family</p>
+            <a
+              href="https://www.tripsavvy.com/road-tripping-with-an-infant-4110669"
+              target="_blank"
+              class="advice advice-tile"
+              ><img
+                class="advice-image"
+                src="https://images-ext-1.discordapp.net/external/WcHr7GLsxE-l2oc3fTYvmcedZ0Io6dwJdhkspmbPDSQ/https/www.tripsavvy.com/thmb/qiu88p-y73lIiOzETivEaPjb1nI%3D/2121x1414/filters%3Afill%28auto%2C1%29/GettyImages-112301263-5820eb693df78cc2e8e2b0ab-5a08af859e9427003726922d.jpg?width=830&height=554"
+                alt="project"
+              />
+            </a>
+
+            <p>
+              10 Tips for Road Tripping With an Infant By Robyn Correll Updated
+              on 09/17/20 Fact checked by Jillian Dara Road trips with an infant
+              can be stressful, but they don’t have to be, and the truth is a
+              car ride with a baby is often less stressful than getting on a
+              plane.
+            </p>
+          </div>
+
+          <div class="advice-grid">
+            <p class="advice-title">For Your Pain-free</p>
+            <a
+              href="https://gokhalemethod.com/blog/63012"
+              target="_blank"
+              class="advice advice-tile"
+              ><img
+                class="advice-image"
+                src="https://images-ext-2.discordapp.net/external/xIjyVPK_kcRfniBAUwTpU46RELKzs5B8sWORtnKjHAA/http/gokhalemethod.com/sites/default/files/u105051/Image%25201.16%2520PM.png"
+                alt="project"
+              />
+            </a>
+
+            <p>
+              How to Modify Your Car Seat For a Pain-Free Ride Facebook WhatsApp
+              Email Share December, 2016 Most of us spend a good deal of time in
+              our cars, commuting, chauffeuring kids around, doing errands, or
+              if we’re lucky, heading out to an adventure spot.
+            </p>
+          </div>
+        </article> -->
+
+        <!-- Contact -->
+        <!-- <article id="contact">
 								<h2 class="major">CONTACT US</h2>
 								<form method="post" action="https://formsubmit.co/">
 									<div class="fields">
@@ -176,20 +621,20 @@ Most of us spend a good deal of time in our cars, commuting, chauffeuring kids a
 							</article>
 
 						
-					</div>
+					</div> -->
 
-				<!-- Footer -->
-					{% comment %} <footer id="footer">
+        <!-- Footer -->
+        <!-- {% comment %} <footer id="footer">
 						<p class="copyright"></p>
 					</footer> {% endcomment %}
 
-			</div>
+			</div> -->
 
-		<!-- BG -->
-			<div id="bg"></div>
+        <!-- BG -->
+        <!-- <div id="bg"></div> -->
 
-		<!-- Scripts -->
-			<script src="{% static 'js/jquery.min.js' %}"></script>
+        <!-- Scripts -->
+        <!-- <script src="{% static 'js/jquery.min.js' %}"></script>
 			<script src="{% static 'js/browser.min.js' %}"></script>
 			<script src="{% static 'js/breakpoints.min.js' %}"></script>
 			<script src="{% static 'js/util.js' %}"></script>
@@ -197,4 +642,8 @@ Most of us spend a good deal of time in our cars, commuting, chauffeuring kids a
         
 	</body>
 
+</html> -->
+      </div>
+    </div>
+  </body>
 </html>

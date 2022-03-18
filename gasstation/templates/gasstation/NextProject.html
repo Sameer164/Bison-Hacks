@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,8 +17,27 @@
     </style>
 </head>
 <body>
-    {% comment %} API KEY =  AIzaSyADja9VSAdmvGSz_eH98YbmfkwJAPYq33M {% endcomment %}
-
+    <!-- {% comment %} API KEY =  AIzaSyADja9VSAdmvGSz_eH98YbmfkwJAPYq33M {% endcomment %} -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid" >
+            <a href="#" class="navbar-brand">
+                <img src="{% static '/img/image1.webp' %}" height="28" alt="CoolBrand">
+            </a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse"  id="navbarCollapse">
+                <div class="navbar-nav">
+                    <a href="{% url 'home' %}" class="nav-item nav-link">Home</a>
+                    <a href="" class="nav-item nav-link">Game</a>
+                    <a href="" class="nav-item nav-link">Discussion</a>
+                    <a href="{%url 'contact' %}" class="nav-item nav-link" tabindex="-1">Contact Us</a>
+                    <a href="{%url 'search' %}" class="nav-item nav-link active" tabindex="-1">Schools Nearby</a>
+                </div>
+                
+            </div>
+    
+    </nav>
     <div class = 'container'>
         <h2 id = "text-center">What is your current location?</h2>
         <form id = 'location-form'> 
@@ -40,7 +61,7 @@
 
 
     <script>
-        {% comment %} geocode(); {% endcomment %}
+        // {% comment %} geocode(); {% endcomment %}
 
         var form = document.getElementById('location-form');
 

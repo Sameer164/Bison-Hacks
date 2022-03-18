@@ -1,10 +1,10 @@
 from django.shortcuts import render
-import googlemaps
-from googlemaps import client
+# import googlemaps
+# from googlemaps import client
 import requests
-from googleplaces import GooglePlaces, types, lang
+# from googleplaces import GooglePlaces, types, lang
 import json
-import gmaps
+# import gmaps
 
 
 

@@ -1,0 +1,682 @@
+@import url(./fontawesome-all.min.css);
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300italic,600italic,300,600");
+
+:root {
+  --color-primary: #0073ff;
+  --color-white: #e9e9e9;
+  --color-black: #141d28;
+  --color-black-1: #212b38;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+.heading {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(
+      rgba(18, 17, 54, 0.5),
+      rgba(118, 187, 141, 0.5)
+    ),
+    url(bg1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+#navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px 10%;
+}
+.menu-bar .logo {
+  left: -100px;
+  position: relative;
+  font-weight: 800;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 32px;
+  letter-spacing: 2px;
+}
+.logo span {
+  color: rgb(5, 170, 60);
+  font-size: 32px;
+  padding-top: 5px;
+}
+
+.menu-bar {
+  background: transparent;
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5%;
+  position: relative;
+}
+.fa-angle-down {
+  padding-left: 10px;
+}
+
+.menu-bar ul {
+  list-style: none;
+  display: flex;
+}
+
+.menu-bar ul li {
+  padding: 5px 20px;
+  color: black;
+  position: relative;
+}
+
+.menu-bar ul li a {
+  font-size: 20px;
+  color: var(--color-white);
+  text-decoration: none;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  transition: all 0.3s;
+}
+.menu-bar ul li a:hover {
+  color: rgb(182, 167, 148);
+}
+/* dropdown menu style */
+.dropdown-menu {
+  display: none;
+  width: 220px;
+  z-index: 5;
+}
+
+.menu-bar ul li:hover .dropdown-menu {
+  /*--- Dropdown-menu will be executed once we hover to menu-bar one part--*/
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background-color: rgba(255, 255, 255);
+  outline: none;
+}
+.menu-bar ul li:hover .dropdown-menu .select-heading {
+  cursor: default;
+}
+.fa-angle-right {
+  /* Right arrow used in Grades */
+  float: right;
+  margin-left: 10px;
+  padding-top: 3px;
+  font-weight: 600;
+}
+
+.menu-bar ul li:hover .dropdown-menu ul {
+  display: block;
+  margin-left: 5px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.menu-bar ul li:hover .dropdown-menu ul li {
+  width: 180px;
+  padding: 10px;
+  border-bottom: 1px solid rgb(196, 187, 187);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: rgb(134, 141, 151);
+}
+.menu-bar ul li:hover .dropdown-menu ul li :last-child {
+  border-bottom: none;
+}
+.dropdown-menu ul li a {
+  color: rgb(134, 141, 151);
+  font-size: 18px;
+  text-align: center;
+}
+.dropdown-menu-1 {
+  display: none;
+  z-index: 5;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.dropdown-menu ul li:hover .dropdown-menu-1 {
+  display: block;
+  position: absolute;
+  left: 200px;
+  top: 10;
+  background-color: rgba(255, 255, 255);
+}
+
+.heading .btn1 {
+  margin-left: 30px;
+  padding: 5px 25px;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  border: 1px solid white;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+.heading .btn2 {
+  margin-left: 30px;
+  background-color: limegreen;
+  padding: 5px 25px;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  border: 1px solid white;
+  border-radius: 25px;
+  border-color: lime;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+.heading .btn1:hover {
+  background-color: white;
+  color: black;
+}
+.heading .btn2:hover {
+  background-color: white;
+  color: lime;
+  border-color: white;
+}
+
+.text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+  color: white;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", "Geneva", "Verdana", "sans-serif";
+}
+.text h1 {
+  font-size: 50px;
+  padding: 10px;
+}
+.text h3 {
+  font-size: 20px;
+  line-height: 2rem;
+}
+/* ----- Search Button ------*/
+.search input[type="text1"] {
+  width: 500px;
+  height: 50px;
+  border: none;
+  border-radius: 10px 0px 0px 0px;
+  font-size: 15px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.search {
+  padding-top: 65px;
+  align-items: center;
+}
+.search button {
+  background-color: rgb(15, 99, 15);
+  color: white;
+  height: 50px;
+  width: 60px;
+  position: absolute;
+  border-radius: 0px 15px 15px 0px;
+  margin-right: 25px;
+  font-size: 25px;
+  border: transparent;
+  cursor: pointer;
+}
+.search button:hover {
+  color: rgb(189, 187, 187);
+  transition: 0.5s;
+}
+/*------------- DOWN ARROW BUTTON ------------------*/
+
+/*---------------REASON WHY ELITE PREP --------------*/
+.reason {
+  width: 100%;
+  margin: auto;
+  padding-top: 50px;
+  background-color: aliceblue;
+  text-align: center;
+}
+.reason .head-ing {
+  color: #000;
+  font-size: 2.5rem;
+  line-height: 2rem;
+  margin-bottom: 64px !important;
+  padding-top: 0.28751rem;
+  display: block;
+  font-weight: 100;
+  font-family: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS",
+    "sans-serif";
+}
+.row {
+  padding: 30px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  box-sizing: inherit;
+  text-align: left;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: rgb(74, 72, 75);
+}
+
+.row .reason-row:first-child {
+  margin-right: 120px;
+}
+.row .reason-row {
+  margin-bottom: 57px;
+  padding-left: 150px;
+  position: relative;
+}
+.row .fa-rocket {
+  left: 80;
+  position: absolute;
+  top: 15px;
+  color: rgb(91, 151, 111);
+}
+.row .heading-one {
+  color: #4a4a4a;
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 25px;
+  margin-bottom: 8px;
+}
+.row .written {
+  color: #4a4a4a;
+  font-size: 16px;
+  font-weight: 400px;
+  line-height: 22px;
+}
+.row .fa-trophy {
+  left: 80;
+  position: absolute;
+  top: 15px;
+  color: rgb(91, 151, 111);
+}
+.row .fa-laptop {
+  left: 80;
+  position: absolute;
+  top: 15px;
+  color: rgb(91, 151, 111);
+}
+.row .fa-podcast {
+  left: 80;
+  position: absolute;
+  top: 15px;
+  color: rgb(91, 151, 111);
+}
+.classes_run {
+  height: 92px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  width: 1140px;
+}
+.classes_run:before {
+  content: "";
+  width: 100%;
+  height: 92px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #0fa8d3;
+}
+.classes_run > span {
+  color: inherit;
+  position: relative;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}
+#about_us_page {
+  width: 100%;
+  margin: auto;
+  padding-top: 100px;
+}
+.about_us {
+  justify-content: space-around;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  box-sizing: inherit;
+  text-align: left;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: rgb(74, 72, 75);
+}
+.our_story .aqw2edd4 {
+  padding-top: 30px;
+  color: #4a4a4a;
+  font-size: 25px;
+  font-weight: 300;
+  line-height: 2rem;
+  margin-bottom: 8px;
+}
+.about_us .des_crip {
+  padding-top: 20px;
+  color: #4a4a4a;
+  font-size: 18px;
+  font-weight: 100px;
+  line-height: 22px;
+}
+
+.lesson_plan {
+  width: 100%;
+  background-color: white;
+  overflow: hidden;
+}
+.lesson_plan .class {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 80px;
+  padding-top: 125px;
+  padding-left: 50px;
+}
+.class {
+  text-align: left;
+  position: relative;
+  width: 90rem;
+}
+.class .run_ning {
+  color: #000;
+  font-size: 30px;
+  font-weight: 400;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  line-height: 10px;
+  margin-bottom: 3.5rem;
+  padding-top: 50px;
+  text-align: left;
+}
+.description {
+  color: #888f97;
+  font-size: 20px;
+  line-height: 2rem;
+  margin-bottom: 50px;
+  padding-top: 8px;
+}
+.lesson_plan .image_kit {
+  background-image: url(pictures/vector8.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 420px;
+  width: 700px;
+  padding-right: 120px;
+}
+.saved_videos {
+  border-radius: 15px;
+  text-decoration: none;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #405392;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 16px;
+  font-weight: 500;
+  height: 42px;
+  justify-content: center;
+  letter-spacing: 0.5px;
+  line-height: normal;
+  outline: none;
+  padding: 5px 20px;
+  text-transform: uppercase;
+  transition: background-color 0.3s;
+  user-select: none;
+  white-space: nowrap;
+  width: auto;
+}
+.saved_videos:hover {
+  background-color: #2196f3;
+  text-decoration: none;
+}
+.get_enrolled {
+  background-color: #003f75 !important;
+  width: 100%;
+  padding-top: 30px;
+  overflow: hidden;
+  text-align: center;
+}
+.get_enrolled .insider_enroll {
+  margin-bottom: 30px !important;
+  padding-top: 0.28751rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+.insider_enroll .header_inside {
+  color: white;
+  margin-bottom: 20px;
+  font-size: 30px;
+  font-weight: 400;
+  padding-top: 30px;
+  font-style: normal;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.insider_enroll .description_inside {
+  color: white;
+  margin-bottom: 20px;
+  font-size: 30px;
+  font-weight: 400;
+  padding-top: 10px;
+  font-style: normal;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.btn-primary {
+  --tw-bg-opacity: 1;
+  background-color: rgba(39, 39, 42, var(--tw-bg-opacity));
+  border-radius: 10px;
+  font-weight: 400;
+  text-decoration: none;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
+  border-color: transparent;
+  border-width: 1px;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 2rem;
+}
+
+/*--------------------------- STUDENT PART ----------------------*/
+
+.heading_name {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: auto;
+  padding-top: 50px;
+  background-color: aliceblue;
+}
+.heading_name .teach_name {
+  /* Student's section Heading*/
+  color: rgb(74, 72, 75);
+  font-size: 1.8rem;
+  margin-bottom: 40px !important;
+  padding-top: 50px;
+  display: block;
+  font-weight: 100;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.heading_name .teacher_name {
+  /* TEACHER'S SECTION HEADING*/
+  color: rgb(74, 72, 75);
+  font-size: 1.8rem;
+  margin-bottom: 40px !important;
+  padding-top: -10px;
+  display: block;
+  font-weight: 100;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.test_main_cont {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+}
+.box_prev {
+  box-shadow: 0 10px 20px -5px #00000061;
+  background-color: #ffffff;
+  padding: 20px;
+  margin-bottom: 100px;
+  width: 300px;
+  box-sizing: border-box;
+  position: relative;
+}
+.box_pr {
+  /* TEACHER"S SECTION */
+  box-shadow: 0 10px 20px -5px #00000061;
+  background-color: #ffffff;
+  padding: 20px;
+  margin-bottom: 150px;
+  width: 300px;
+  box-sizing: border-box;
+  position: relative;
+}
+.asd2kjb {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.poi1uisg2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.paweisj2 {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.paweisj2 img {
+  left: -10;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.user_info {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding-left: 10px;
+}
+.user_info h2 {
+  color: black;
+  font-size: 15px;
+  letter-spacing: 2px;
+}
+.user_info span {
+  color: black;
+  font-size: 15px;
+}
+.stars_review {
+  color: rgb(8, 42, 153);
+  font-size: 10px;
+}
+.add_review p {
+  font-size: 15px;
+  color: black;
+  text-align: left;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+/* ------------------- footer ------------------*/
+
+.footer {
+  width: 100%;
+  position: relative;
+  background-color: #1f4c70;
+  background-size: cover;
+  overflow: hidden;
+}
+.footer .main_footer {
+  display: flex;
+  flex-direction: column;
+}
+.footer .terms_condi {
+  color: white;
+  line-height: 2rem;
+  padding-top: 50px;
+  display: block;
+}
+.footer .terms_condi .name_prep {
+  font-weight: 100;
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS",
+    "sans-serif";
+  font-size: 3rem;
+}
+.footer .terms_condi .foot_work {
+  text-align: center;
+  font-weight: 100;
+  padding-top: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS",
+    "sans-serif";
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+.icons {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
+}
+.icons li {
+  margin: 0 10px;
+}
+.icons a {
+  text-decoration: none;
+  color: white;
+}
+.icons a i {
+  font-size: 30px;
+}
+.icons a:hover i {
+  -webkit-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  transform: scale(0.95);
+  transition: 0.5s;
+}
+.footer_bottom {
+  background-color: whitesmoke;
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+}
+.footer_bottom .more_desc {
+  font-size: 15px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+}
+.more_desc span {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: #4a4a4a;
+}
