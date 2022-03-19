@@ -49,21 +49,24 @@
     <div>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid" >
-            <a href="#" class="navbar-brand">
-                <img src="{% static '/img/image1.webp' %}" height="28" alt="CoolBrand">
-            </a>
-            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <a href="#" class="navbar-brand w-20">
+                <img src="https://res.cloudinary.com/goabhi/image/upload/v1647697710/275465363_668038460984736_8953662360308100467_n_oe6mf9.png" height="45" width="55" alt="CoolBrand">
+                <em> Spectrum </em>
+              </a>
+
+            
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" style="background-color: #7c9bcb;">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            
+
             <div class="collapse navbar-collapse"  id="navbarCollapse">
                 <div class="navbar-nav">
-                    <a href="{% url 'home' %}" class="nav-item nav-link active">Home</a>
-                    <a href="{% url 'games' %}" class="nav-item nav-link">Game</a>
-                    <a href="" class="nav-item nav-link">Discussion</a>
-                    <a href="{% url 'contact' %}" class="nav-item nav-link" tabindex="-1">Contact Us</a>
-                    <a href="{% url 'search' %}" class="nav-item nav-link" tabindex="-1">Schools Nearby</a>
-                    <a href="{% url 'blog' %}" class="nav-item nav-link" tabindex="-1">Blog</a>
+                    <a href="{% url 'home' %}" class="nav-item nav-link active m-2">Home</a>
+                    <a href="{% url 'games' %}" class="nav-item nav-link m-2">Game</a>
+                    <a href="" class="nav-item nav-link m-2">Discussion</a>
+                    <a href="{% url 'contact' %}" class="nav-item nav-link m-2" tabindex="-1">Contact Us</a>
+                    <a href="{% url 'search' %}" class="nav-item nav-link m-2" tabindex="-1">Schools Nearby</a>
+                    <a href="{% url 'blog' %}" class="nav-item nav-link m-2" tabindex="-1">Blog</a>
                 </div>
                 
             </div>
