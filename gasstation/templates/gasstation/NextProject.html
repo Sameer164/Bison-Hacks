@@ -61,8 +61,6 @@
 
 
     <script>
-        // {% comment %} geocode(); {% endcomment %}
-
         var form = document.getElementById('location-form');
 
         form.addEventListener('submit', geocode); 
@@ -142,15 +140,15 @@
                 location2 = response.data.results[0].formatted_address
                 latitude = response.data.results[0].geometry.location.lat
                 longitude = response.data.results[0].geometry.location.lng
-                var locationoutput = `
-                    <ul class = 'list-group'>
-                        <li class = "list-group-item">${location2}</li>
-                        <li class = "list-group-item">Latitude: ${latitude}</li>
-                        <li class = "list-group-item">Longitude: ${longitude}</li>
-                    </ul>
-                `
-                // Output
-                document.getElementById('Address').innerHTML = locationoutput;
+                // var locationoutput = `
+                //     <ul class = 'list-group'>
+                //         <li class = "list-group-item">${location2}</li>
+                //         <li class = "list-group-item">Latitude: ${latitude}</li>
+                //         <li class = "list-group-item">Longitude: ${longitude}</li>
+                //     </ul>
+                // `
+                // // Output
+                // document.getElementById('Address').innerHTML = locationoutput;
 
                 //Address Components
                 lists(latitude, longitude);
