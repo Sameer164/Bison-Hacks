@@ -14,6 +14,9 @@ def index(request, *args, **kwargs):
     return render(request, 'gasstation/NextProject.html', context)
 
 
+def games(request):
+    return render(request, 'gasstation/games.html')
+
 def blog(request):
     return render(request, 'gasstation/blog.html')
 
