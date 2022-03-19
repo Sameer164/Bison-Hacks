@@ -39,19 +39,27 @@
     
     </nav>
     <div class = 'container mt-3'>
-        <h4 id = "text-center">Find autism centers nearby</h4>
-        <form id = 'location-form'> 
-            <input placeholder="enter your location" type = "text" id = 'location-input' class = "form-control form-control-lg">
-            <br>
-            <button type = "submit" class = "btn btn-primary btn-block">Submit</button>
-            <br>
-            <br>
-        </form>
-        <div id = "Address"></div>
 
+        <div class="row">
+<div class="col-md"><h4 id = "text-center">Find autism centers nearby</h4>
+    <form id = 'location-form'> 
+        <input placeholder="enter your location" type = "text" id = 'location-input' class = "form-control form-control-lg">
+        <br>
+        <button type = "submit" class = "btn btn-primary btn-block">Submit</button>
+        <br>
+        <br>
+    </form>
+    <div id = "Address"></div></div>
 
-
+    <div class="col-md">
         <div id = "map"></div>
+    </div>
+        </div>
+        
+
+
+
+        
     <div>
     
 
@@ -95,6 +103,13 @@
             infowindow = new google.maps.InfoWindow();
 
             main_map.nearbySearch(search_options, function(results){
+                console.log(results[0].name, results[0].vicinity)
+                data = `
+                    <h2> ${results[0].name} </h2>
+                    <p> ${results[0].vicinity} </p>
+                `
+
+                document.getElementById('Address').innerHTML = data
                 for (var i = 0; i < results.length; i++) {
                     createMarker(results[i]);
                 }
@@ -135,7 +150,7 @@
             })
             .then(function(response){
                 // We will use these responses. 
-                console.log(response)
+                
                 //Formatted address
                 location2 = response.data.results[0].formatted_address
                 latitude = response.data.results[0].geometry.location.lat
