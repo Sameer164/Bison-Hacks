@@ -12,6 +12,87 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <style>
+      .main .col{
+    width: 48%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+.post{
+    background-color: white;
+    box-shadow: 0 10px 20px -5px #00000061;
+    border-radius: 0 0 25px 0;
+    width: 350px;
+}
+.post img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.post-info h2{
+    font-weight: 600;
+    margin: 10px;
+    color: var(--color-black-1);
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.post-info h2:hover{
+    color: red;
+}
+.post-info p{
+    font-size: 15px;
+    opacity: 0.7;
+    line-height: 1.5rem;
+    text-align: justify;
+    padding: 0 10px 10px 10px;
+    cursor: pointer;
+}
+.post-info p:hover{
+    color: rgb(214, 0, 0);
+}
+.user-info img{
+    width: 15%;
+    height: 15%;
+    border-radius: 50%;
+}
+.user-info{
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+}
+.user-info h1{
+    font-weight: 100;
+    font-size: 15px;
+    display: flex;
+    flex-direction: row;
+    color: var(--color-black-1);
+}
+.user-info .date{
+    margin-left: 10px;
+    line-height: 1.5rem;
+}
+
+.container.main{
+    display: flex;
+    justify-content: space-around;
+    padding: 0 0 16px;
+}
+.post-info h4{
+    padding: 0 10px 20px 10px;
+    font-size: 15px;
+    color: #141d28;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+.col .post:first-child{
+    margin-left: 150px;
+}
+.post-info h4:hover{
+    color: red;
+}
+
+    </style>
   </head>
   <body>
       <!-- Nav bar -->
@@ -38,10 +119,37 @@
         </nav>
         </div>
 
+        <!-- games -->
+        <div class="container main mt-5">
+          <div class="row">
+    
+            <div class="col-md m-1">
+              <div class="post">
+                  <img src="https://res.cloudinary.com/goabhi/image/upload/v1647658717/Screen_Shot_2022-03-18_at_10.58.18_PM_vktktx.png" alt=""> 
+                  <div class="post-info">
+                      <h2>Subtraction game</h2>  <!--- Backend code for the heading of the blog-->
+                      <div class="user-info">
+                          <!-- <img src="pictures/vector1.jpg" alt="">
+                          <div class="date">Nikhil Aryal
+                          <h1>March 27, 2020</h1></div> -->
+                      </div>
+                      <p>                     <!--- Backend code for the description(first few lines) of the blog-->
+                          <!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                          exercitation...  -->
+                      </p>
+                      <a href="https://www.abcya.com/games/subtraction_game" target="_blank"><h4>Play game</h4></a>
+                  </div>
+              </div>
+          </div>
+          
+          </div>
+    
+        </div>
 
-        <div class="container mt-5">
+        <!-- <div class="container mt-5">
             <div class="row">
-                <div class="card col-md" style="width: 18rem;">
+                <div class="card col-md m-2" style="width: 18rem;">
                     <img class="card-img-top" src="https://res.cloudinary.com/goabhi/image/upload/v1647658717/Screen_Shot_2022-03-18_at_10.58.18_PM_vktktx.png" alt="Card image cap">
                     <div class="card-body">
                       <h5 class="card-title">Subtraction game</h5>
@@ -49,7 +157,7 @@
                     </div>
                   </div>
                 
-                  <div class="card col-md" style="width: 18rem;">
+                  <div class="card col-md m-2" style="width: 18rem;">
                     <img class="card-img-top" src="https://res.cloudinary.com/goabhi/image/upload/v1647658840/Screen_Shot_2022-03-18_at_11.00.24_PM_f3q9fk.png" alt="Card image cap">
                     <div class="card-body">
                       <h5 class="card-title">Stack shot</h5>
@@ -58,7 +166,7 @@
                   </div>
 
 
-                  <div class="card col-md" style="width: 18rem;">
+                  <div class="card col-md m-2" style="width: 18rem;">
                     <img class="card-img-top" src="https://res.cloudinary.com/goabhi/image/upload/v1647658951/Screen_Shot_2022-03-18_at_11.01.52_PM_ydhwoe.png" alt="Card image cap">
                     <div class="card-body">
                       <h5 class="card-title">Playing cards</h5>
@@ -88,7 +196,7 @@
 
             </div>
             
-        </div>
+        </div> -->
 
 
   </body>
