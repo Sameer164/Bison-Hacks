@@ -26,6 +26,9 @@ def home(request):
 def contact(request):
     return render(request, 'gasstation/contact.html')
 
+def discussion(request):
+    return render(request, 'gasstation/discussion.html')
+
 
 API_KEY = 'AIzaSyADja9VSAdmvGSz_eH98YbmfkwJAPYq33M'
 # Create your views here.
