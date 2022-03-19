@@ -1,5 +1,325 @@
 {% load static %}
+
 <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog post</title>
+    <link rel="stylesheet" href="mainblogc.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <style>
+      :root {
+    --color-primary: #0073ff;
+    --color-white: #e9e9e9;
+    --color-black: #141d28;
+    --color-black-1: #212b38;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+
+.main .col{
+    width: 48%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+.post{
+    background-color: white;
+    box-shadow: 0 10px 20px -5px #00000061;
+    border-radius: 0 0 25px 0;
+    width: 350px;
+}
+.post img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.post-info h2{
+    font-weight: 600;
+    margin: 10px;
+    color: var(--color-black-1);
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.post-info h2:hover{
+    color: red;
+}
+.post-info p{
+    font-size: 15px;
+    opacity: 0.7;
+    line-height: 1.5rem;
+    text-align: justify;
+    padding: 0 10px 10px 10px;
+    cursor: pointer;
+}
+.post-info p:hover{
+    color: rgb(214, 0, 0);
+}
+.user-info img{
+    width: 15%;
+    height: 15%;
+    border-radius: 50%;
+}
+.user-info{
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+}
+.user-info h1{
+    font-weight: 100;
+    font-size: 15px;
+    display: flex;
+    flex-direction: row;
+    color: var(--color-black-1);
+}
+.user-info .date{
+    margin-left: 10px;
+    line-height: 1.5rem;
+}
+
+.container.main{
+    display: flex;
+    justify-content: space-around;
+    padding: 0 0 16px;
+}
+.post-info h4{
+    padding: 0 10px 20px 10px;
+    font-size: 15px;
+    color: #141d28;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+.col .post:first-child{
+    margin-left: 150px;
+}
+.post-info h4:hover{
+    color: red;
+}
+
+/* ------------------- footer ------------------*/
+
+.footer{
+    width: 100%;
+    position: relative;
+    background-color: #1f4c70;
+    background-size: cover;
+    overflow: hidden;
+}
+.footer .main_footer{
+    display: flex;
+    flex-direction: column;
+}
+.footer .terms_condi{
+    color: white;
+    line-height: 2rem;
+    padding-top: 50px;
+    display: block;
+}
+.footer .terms_condi .name_prep{
+    font-weight: 100;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', 'sans-serif';
+    font-size: 3rem;
+}
+.footer .terms_condi .foot_work{
+    text-align: center;
+    font-weight: 100;
+    padding-top: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', 'sans-serif';
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+.icons{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+.icons li{
+    margin: 0 10px;
+}
+.icons a{
+    text-decoration: none;
+    color: white;
+}
+.icons a i {
+    font-size: 30px;
+}
+.icons a:hover i{
+    -webkit-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    transform: scale(0.95);
+    transition: 0.5s;
+}
+.footer_bottom{
+    background-color: whitesmoke;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer_bottom .more_desc{
+    font-size: 15px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.more_desc span{
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #4a4a4a;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 800px){
+    .container.main{
+        display: flex;
+        flex-direction: column;
+    }
+    .col .post:first-child{
+        margin-left: 20px;
+    }
+    .main .col{
+        width: 100%;
+        margin-top: 50px;
+    }
+}
+    </style>
+  </head>
+<body>
+
+<!-- Nav -->
+<div>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid" >
+          <a href="#" class="navbar-brand">
+              <img src="{% static '/img/image1.webp' %}" height="28" alt="CoolBrand">
+          </a>
+          <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          
+          <div class="collapse navbar-collapse"  id="navbarCollapse">
+              <div class="navbar-nav">
+                  <a href="{% url 'home' %}" class="nav-item nav-link active">Home</a>
+                  <a href="{% url 'games' %}" class="nav-item nav-link">Game</a>
+                  <a href="" class="nav-item nav-link">Discussion</a>
+                  <a href="{% url 'contact' %}" class="nav-item nav-link" tabindex="-1">Contact Us</a>
+                  <a href="{% url 'search' %}" class="nav-item nav-link" tabindex="-1">Schools Nearby</a>
+                  <a href="{% url 'blog' %}" class="nav-item nav-link" tabindex="-1">Blog</a>
+              </div>
+              
+          </div>
+
+  </nav>
+  </div>
+
+    <div class="container main mt-5">
+      <div class="row">
+
+        <div class="col-md m-1">
+          <div class="post">
+              <img src="https://cdn.glitch.me/e4359ceb-1a1a-4f30-bbc8-5bd01fc4e489%2FKenden-400x445.jpg?v=1635552375282" alt=""> 
+              <div class="post-info">
+                  <h2>"Autism is my son's superpower"!</h2>  <!--- Backend code for the heading of the blog-->
+                  <div class="user-info">
+                      <!-- <img src="pictures/vector1.jpg" alt="">
+                      <div class="date">Nikhil Aryal
+                      <h1>March 27, 2020</h1></div> -->
+                  </div>
+                  <p>                     <!--- Backend code for the description(first few lines) of the blog-->
+                      <!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                      incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                      exercitation...  -->
+                  </p>
+                  <a href="https://autismjourney.org/autism-is-my-sons-superpower/" target="_blank"><h4>Read More..</h4></a>
+              </div>
+          </div>
+      </div>
+      <div class="col-md m-2">
+          <div class="post">
+              <img src="https://cdn.glitch.me/e4359ceb-1a1a-4f30-bbc8-5bd01fc4e489%2F1-600x600.jpg?v=1635552569729" alt=""> 
+              <div class="post-info">
+                  <h2>Autism doesn't define us-Autism Journey</h2>  <!--- Backend code for the heading of the blog-->
+                  <div class="user-info">
+                      <!-- <img src="pictures/vector2.jpg" alt="">
+                      <div class="date">Abhishek Khanal
+                      <h1>March 1, 2019</h1></div> -->
+                  </div>
+                  <p>                     <!--- Backend code for the description(first few lines) of the blog-->
+                      <!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                      incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                      exercitation...  -->
+                  </p>
+                  <a href="https://autismjourney.org/tips-to-keep-your-family-healthy-and-active/" target="_blank"><h4>Read More..</h4></a>
+              </div>
+          </div>
+      </div>
+      </div>
+
+    </div>
+
+    <!-- <div class="container main">
+        <div class="col">
+            <div class="post">
+                <img src="https://cdn.glitch.me/e4359ceb-1a1a-4f30-bbc8-5bd01fc4e489%2F1-600x600.jpg?v=1635552569729" alt=""> 
+                <div class="post-info">
+                    <h2>Autism doesn't define us-Autism Journey</h2>  
+                    <div class="user-info">
+                        
+                    </div>
+                    
+                    <a href="https://cdn.glitch.me/e4359ceb-1a1a-4f30-bbc8-5bd01fc4e489%2FFamily-yoga-1.png?v=1635552561743" target="_blank"><h4>Read More..</h4></a>
+                </div>
+            </div>
+        </div>
+        
+    </div> -->
+
+     <!---------------------- FOOTER------------------------->
+<!-- 
+     <section class="footer">
+        <div class="main_footer">
+            <div class="terms_condi">
+                <h1 class="name_prep">ElitePrep <i class="fa fa-ils" aria-hidden="true"></i></h1>
+                <div class="foot_work">Lorem ipsum dolor sit amet ut enim ad minim veniam, 
+                    ullamco laborisconsectetur<br>adipiscing elit, sed do eiusmod tempor<br>incididunt 
+                    ut labore et dolore.</div>
+                <ul class="icons">
+                    <li><a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></i></a></li>
+                    <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></i></a></li>
+                    <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></i></a></li>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    
+</body>
+</html>
+
+<!-- <!DOCTYPE html>
 <html>
   <head>
     <title>Autism</title>
@@ -68,4 +388,4 @@
       <div class="desc">Autism doesn't define us-Autism Journey</div>
     </div>
   </body>
-</html>
+</html> -->
